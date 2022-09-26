@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fake_account_fragment_nav_graph"
+    app:startDestination="@id/accountFragment">
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.marketplace.ui.view.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/account_fragment" >
+        <action
+            android:id="@+id/action_accountFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:popUpTo="@layout/account_fragment"/>
+        <action
+            android:id="@+id/action_accountFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment"
+            app:popUpTo="@layout/account_fragment"/>
+        <action
+            android:id="@+id/action_accountFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment"
+            app:popUpTo="@layout/account_fragment"/>
+        <action
+            android:id="@+id/action_accountFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment"
+            app:popUpTo="@layout/account_fragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_paymentsMethodsFragment"
+            app:destination="@id/paymentsMethodsFragment"
+            app:popUpTo="@layout/account_fragment"/>
+        <action
+            android:id="@+id/action_accountFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_myDetailsFragment"
+            app:destination="@id/myDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.marketplace.ui.view.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/settings_fragment">
+        <action
+            android:id="@+id/action_settingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.marketplace.ui.view.order.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/orders_fragment"/>
+
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.example.marketplace.ui.view.address.AddressesFragment"
+        android:label="Address"
+        tools:layout="@layout/addresses_fragment">
+        <action
+            android:id="@+id/action_addressesFragment_to_createAddressFragment"
+            app:destination="@id/createAddressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAddressFragment"
+        android:name="com.example.marketplace.ui.view.address.CreateAddressFragment"
+        android:label="Create address"
+        tools:layout="@layout/create_address_fragment"/>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.marketplace.ui.view.notifications.NotificationFragment"
+        android:label="Notifications"
+        tools:layout="@layout/notification_fragment"/>
+
+    <fragment
+        android:id="@+id/paymentsMethodsFragment"
+        android:name="com.example.marketplace.ui.view.payments_method.PaymentsMethodFragment"
+        android:label="Payments Methods"
+        tools:layout="@layout/payments_methods_fragment"/>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.marketplace.ui.view.sign_in.SignInFragment"
+        android:label="SignIn"
+        tools:layout="@layout/sign_in_fragment">
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.marketplace.ui.view.reset_password.ResetPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/reset_password_fragment"/>
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.marketplace.ui.view.change_password.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/change_password_fragment"/>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.marketplace.ui.view.sign_up.SignUpFragment"
+        android:label="SignUp"
+        tools:layout="@layout/sign_up_fragment"/>
+
+    <fragment
+        android:id="@+id/myDetailsFragment"
+        android:name="com.example.marketplace.ui.view.my_details.MyDetailsFragment"
+        android:label="My Details"
+        tools:layout="@layout/my_details_fragment"/>
+</navigation>

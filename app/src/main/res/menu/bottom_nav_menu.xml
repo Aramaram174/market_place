@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/home"-->
+<!--        android:title="@string/bottom_home_title"-->
+<!--        android:icon="@drawable/ic_bottom_home"/>-->
+<!--    <item-->
+<!--        android:id="@+id/catalog"-->
+<!--        android:title="@string/bottom_catalog_title"-->
+<!--        android:icon="@drawable/ic_bottom_catalog"/>-->
+<!--    <item-->
+<!--        android:id="@+id/cart"-->
+<!--        android:title="@string/bottom_cart_title"-->
+<!--        android:icon="@drawable/ic_bottom_cart"/>-->
+<!--    <item-->
+<!--        android:id="@+id/favorite"-->
+<!--        android:title="@string/bottom_favorite_title"-->
+<!--        android:icon="@drawable/ic_bottom_favorite"/>-->
+<!--    <item-->
+<!--        android:id="@+id/account"-->
+<!--        android:title="@string/bottom_account_title"-->
+<!--        android:icon="@drawable/ic_bottom_account"/>-->
+</menu>

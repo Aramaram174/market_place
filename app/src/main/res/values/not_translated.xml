@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">MarketPlace</string>
+
+    <string name="config_host" translatable="false">http://android.betcoapps.com</string>
+    <string name="config_path" translatable="false">casino/config/config_test_1.txt</string>
+
+    <string name="site_id" translatable="false">1</string>
+    <string name="default_language" translatable="false">hy</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fragment"
+            type="com.example.marketplace.ui.view.cart.CartFragment" />
+        <variable
+            name="viewModel"
+            type="com.example.marketplace.ui.view.cart.CartViewModel" />
+        <variable
+            name="adapter"
+            type="com.example.marketplace.ui.view.adapter.ProductAdapter" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/appBarLayoutView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/app_bar_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            bind:titleToolbar="@{@string/cart}"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cart"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayoutView"
+            app:layout_constraintBottom_toTopOf="@id/btn_checkout"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <include
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            layout="@layout/empty_item"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayoutView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--            android:visibility="@{adapter.itemSize > 0 ? View.GONE : View.VISIBLE, default = gone}"-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_checkout"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="@{()-> fragment.goToCheckout()}"
+            android:background="@android:color/holo_green_dark"
+            android:text="Checkout"
+            app:layout_constraintTop_toBottomOf="@id/rv_cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--        android:visibility="@{adapter.itemSize > 0 ? View.VISIBLE : View.GONE, default = visible}"-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

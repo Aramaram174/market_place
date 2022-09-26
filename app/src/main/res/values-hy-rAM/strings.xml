@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MarketPlace</string>
+    <string name="bottom_cart_title">Զամբյուղ</string>
+    <string name="chat">Նամակ</string>
+    <string name="bottom_home_title">Գլխավոր</string>
+    <string name="bottom_catalog_title">Կատալոգ</string>
+    <string name="bottom_favorite_title">Նախընտրած</string>
+    <string name="promotion">Ակցիա</string>
+    <string name="bottom_account_title">Իմ էջը</string>
+    <string name="product">product</string>
+</resources>

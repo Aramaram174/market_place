@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MarketPlace</string>
+    <string name="promotion">Акции</string>
+    <string name="bottom_home_title">Главная</string>
+    <string name="bottom_catalog_title">Каталог</string>
+    <string name="bottom_cart_title">Корзина</string>
+    <string name="bottom_account_title">Профиль</string>
+    <string name="bottom_favorite_title">Избронный</string>
+    <string name="chat">Чат</string>
+    <string name="product">product</string>
+</resources>
